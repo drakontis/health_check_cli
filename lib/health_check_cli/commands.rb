@@ -7,12 +7,6 @@ require 'health_check_cli/commands/show'
 
 module HealthCheckCli
   module Commands
-    CMD_HELP = "help"
-    CMD_EXIT = "exit"
-    CMD_STATUS = "status"
-    CMD_INIT = "init"
-    CMD_SHOW = "show"
-
     class Error < RuntimeError
       attr_reader :message
 
@@ -23,11 +17,11 @@ module HealthCheckCli
 
     def find(cmd, app)
       case cmd
-        when CMD_HELP then Help.new(app)
-        when CMD_EXIT then Exit.new(app)
-        when CMD_STATUS then Status.new(app)
-        when CMD_INIT then Init.new(app)
-        when CMD_SHOW then Show.new(app)
+        when 'help' then Help.new(app)
+        when 'exit' then Exit.new(app)
+        when 'status' then Status.new(app)
+        when 'init' then Init.new(app)
+        when 'show' then Show.new(app)
         else Command.new(app)
       end
     end
