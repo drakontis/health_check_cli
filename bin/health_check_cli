@@ -1,0 +1,6 @@
+#!/usr/bin/env ruby
+
+require 'health_check_cli'
+
+prompt = HealthCheckCli::Prompt.new
+prompt.run
