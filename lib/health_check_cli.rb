@@ -3,6 +3,12 @@ require "health_check_cli/commands"
 
 module HealthCheckCli
   class Prompt
+    attr_accessor :application_url
+
+    def initialize(application_url = 'https://gitlab.com')
+      @application_url = application_url
+    end
+
     PROMPT = "> "
 
     def run

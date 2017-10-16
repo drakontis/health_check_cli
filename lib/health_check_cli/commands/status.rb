@@ -5,9 +5,12 @@ module HealthCheckCli
   module Commands
     class Status < Command
 
-      def execute(opts = {})
+      def execute(opts = nil)
         begin
-          url = URI.parse('https://gitlab.com')
+          puts "Application url: #{@app.application_url}"
+          puts '-----------------------------------------'
+
+          url = URI.parse(@app.application_url)
           start_time = Time.now
           response = Net::HTTP.get(url)
           @response_time = Time.now - start_time
