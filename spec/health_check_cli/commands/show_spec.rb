@@ -27,7 +27,7 @@ RSpec.describe HealthCheckCli::Commands::Show do
 
       expect(app.application_url).to eq application_url
 
-      expect { command.execute }.to output("Checking application: #{application_url}\n").to_stdout
+      expect{ command.execute }.to output("Checking application: #{application_url}\n").to_stdout
     end
   end
 end
