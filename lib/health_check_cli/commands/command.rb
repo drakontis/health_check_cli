@@ -1,6 +1,8 @@
 module HealthCheckCli
   module Commands
     class Command
+      attr_accessor :app
+
       def initialize(app)
         @app = app
       end
