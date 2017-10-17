@@ -3,7 +3,7 @@ require "health_check_cli/commands"
 
 module HealthCheckCli
   class Prompt
-    attr_accessor :application_url
+    attr_accessor :application_url, :live
 
     def initialize(application_url = 'https://gitlab.com')
       @application_url = application_url
