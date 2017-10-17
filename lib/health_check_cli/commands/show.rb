@@ -1,6 +1,6 @@
 module HealthCheckCli
   module Commands
-    class Show
+    class Show < Command
       def initialize(app)
         @app = app
       end
