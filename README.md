@@ -1,8 +1,6 @@
 # HealthCheckCli
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/health_check_cli`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
+This is a simple CLI tool that checks the status of a given application
 
 ## Installation
 
@@ -22,7 +20,21 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+To start using the health check CLI gem, in you terminal type: 
+```
+health_check_cli
+```
+
+The default application that is be checked is 'https://gitlab.com'
+
+Currently in the prompt you can give the following commands:
+* help : This command prints the application's manual.
+* init : Reinitializes the application with a new endpoint.
+* show : Displays the application that is under health check.
+* status: Displays the status of the given application and prints the response time.
+* exit : Exits the application
+
+I hope to find some time to extend the gem's functionality
 
 ## Development
 
@@ -32,7 +44,7 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/health_check_cli.
+Bug reports and pull requests are welcome on GitHub at https://github.com/drakontis/health_check_cli.
 
 ## License
 
