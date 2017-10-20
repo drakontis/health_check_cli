@@ -1,6 +1,6 @@
 # HealthCheckCli
 
-This is a simple CLI tool that checks the status of a given application
+This is a simple CLI tool that displays the status of a given application.
 
 ## Installation
 
@@ -20,21 +20,21 @@ Or install it yourself as:
 
 ## Usage
 
-To start using the health check CLI gem, in you terminal type: 
+To start using the health check CLI gem, type in you terminal: 
 ```
 health_check_cli
 ```
 
-The default application that is be checked is 'https://gitlab.com'
+The default application to be checked is 'https://gitlab.com'
 
-Currently in the prompt you can give the following commands:
-* help : This command prints the application's manual.
-* init : Reinitializes the application with a new endpoint.
-* show : Displays the application that is under health check.
+Currently, in the prompt you can give the following commands:
+* help: This command prints the application's manual.
+* init: Reinitializes the application with a new endpoint.
+* show: Displays the application that is under health check.
 * status: Displays the status of the given application and prints the response time.
-* exit : Exits the application
+* exit: Exits the application
 
-I hope to find some time to extend the gem's functionality
+I would like some time in the future to extend the gem's functionality. :)
 
 ## Development
 
