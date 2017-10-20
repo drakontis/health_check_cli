@@ -24,7 +24,7 @@ RSpec.describe HealthCheckCli::Commands::Help do
       app = double('App')
       command = HealthCheckCli::Commands::Help.new(app)
 
-      output = "help             Shows this help message.\ninit             (Re)Initialises the application with a new endpoint.\nshow             Shows the current application that is under health check.\nstatus           Shows the status of the application and prints the response time.\nexit             Exits the application.\n"
+      output = "help             Displays this help message.\ninit             Reinitialises the health_check_cli application with a new endpoint. Example: init http://www.drakontis.com\nshow             Displays the current application that is under health check.\nstatus           Displays the status of the current application that is under health check and prints its response time.\nexit             Exits the application.\n"
 
       expect { command.execute }.to output(output).to_stdout
     end
