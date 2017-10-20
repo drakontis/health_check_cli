@@ -20,7 +20,7 @@ Or install it yourself as:
 
 ## Usage
 
-To start using the health check CLI gem, type in you terminal: 
+To start using the health check CLI gem, type in your terminal: 
 ```
 health_check_cli
 ```
@@ -35,6 +35,12 @@ Currently, in the prompt you can give the following commands:
 * exit: Exits the application
 
 I would like some time in the future to extend the gem's functionality. :)
+
+## Test
+The application is fully unit tested, using Rspec. To run the test suite type in your terminal:
+```
+rspec spec
+``` 
 
 ## Development
 
